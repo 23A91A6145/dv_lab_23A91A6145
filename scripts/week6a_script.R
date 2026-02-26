@@ -1,0 +1,19 @@
+# DV Lab – Week 06A
+# Name:N.charan kumar reddy
+# Roll No:23A91A6145
+#Load and Understand the DataSet
+data(diamonds)
+data(package=.packages(all.available = TRUE))
+library(ggplot2)
+data("diamonds")
+str(diamonds)
+dim(diamonds)
+?diamonds
+
+#Very basic Scatter'
+
+plot(diamonds$carat,diamonds$price)
+
+#improved Scatter
+plot(diamonds$carat,diamonds$price,col=rgb(0,0,1,0.1),pch=16,
+     main = "Scatter Plot: Carat Vs Price")
